@@ -7,8 +7,15 @@ public class Lab13{
         int evenSum = 0;
         int oddSum = 0;
 
+        Scanner console = new Scanner(System.in);
+
+        System.out.print("File: ");
+        String file = console.next();
+
         
-        File data = new File("Data1.txt");
+
+        
+        File data = new File(file);
 
         Scanner in = new Scanner(data);
 
@@ -29,6 +36,7 @@ public class Lab13{
 
 
         in.close();
+        console.close();
 
     }
 }
